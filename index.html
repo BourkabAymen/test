@@ -3,39 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Canva Design to HTML</title>
-    <script src="path/to/html2canvas.js"></script>
+    <title>Redirect Button</title>
 </head>
 <body>
-    <img src="Home.png" id="Home">
-    <img src="Contact Details.png" id="CD">
-    <img src="Home.png" id="Home">    
-    <img src="Contact Details.png" id="CD">
-
+    <h1>Welcome to My Website</h1>
+    <p>Click the button below to visit another website:</p>
+    <button onclick="redirectToAnotherWebsite()">Go to Example.com</button>
 
     <script>
-        html2canvas(document.querySelector("#Home")).then(canvas => {
-            document.body.appendChild(canvas)
-        });
+        function redirectToAnotherWebsite() {
+            window.location.href = "https://www.example.com";
+        }
     </script>
-
-    <script>
-        html2canvas(document.querySelector("#CD")).then(canvas => {
-            document.body.appendChild(canvas)
-        });
-    </script>
-
-    <script>
-        html2canvas(document.querySelector("#Home")).then(canvas => {
-            document.body.appendChild(canvas)
-        });
-    </script>
-
-    <script>
-        html2canvas(document.querySelector("#CD")).then(canvas => {
-            document.body.appendChild(canvas)
-        });
-    </script>
-
 </body>
 </html>
