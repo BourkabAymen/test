@@ -2,12 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Redirecting...</title>
-    <script type="text/javascript">
-        window.location.href = "https://chat.openai.com/c/8adde76c-58a9-4ed8-8bdc-52a6cbe98aad";
-    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canva Design to HTML</title>
+    <script src="path/to/html2canvas.js"></script>
 </head>
 <body>
-    <p>If you are not redirected automatically, <a href="https://chat.openai.com/c/8adde76c-58a9-4ed8-8bdc-52a6cbe98aad">click here</a>.</p>
+    <img src="Home.png" id="Home">
+    <img src="Contact Details.png" id="CD">
+    <img src="Home.png" id="Home">    
+    <img src="Contact Details.png" id="CD">
+
+
+    <script>
+        html2canvas(document.querySelector("#Home")).then(canvas => {
+            document.body.appendChild(canvas)
+        });
+    </script>
+
+    <script>
+        html2canvas(document.querySelector("#CD")).then(canvas => {
+            document.body.appendChild(canvas)
+        });
+    </script>
+
+    <script>
+        html2canvas(document.querySelector("#Home")).then(canvas => {
+            document.body.appendChild(canvas)
+        });
+    </script>
+
+    <script>
+        html2canvas(document.querySelector("#CD")).then(canvas => {
+            document.body.appendChild(canvas)
+        });
+    </script>
+
 </body>
 </html>
